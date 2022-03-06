@@ -1,0 +1,178 @@
+:root{
+    --colorWhite : #fff;
+    --maincolortext : #556270;
+    --colorred : #d9232d;
+    --colorBlack : #000;
+    --colorGray : #eee;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/*----------- statr in navbar -----------*/
+nav{
+    background-color: var(--colorWhite);
+    z-index: 2;
+}
+
+nav .navbar-brand{
+    font-weight: 600;
+    font-size: 28px;
+    color: var(--maincolortext);
+}
+
+nav .navbar-nav a{
+    color: var(--maincolortext);
+    transition: all .1s linear;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav .navbar-nav a:hover{
+    color: var(--colorred);
+}
+
+nav .navbar-nav button{
+    background-color: var(--colorred);
+}
+/*----------- statr in navbar -----------*/
+
+/* ----------- start breadcumb ----------- */
+.breadcumb{
+    background-color: var(--colorGray);
+    padding: 10px;
+}
+
+.breadcumb .content-ol{
+    display: flex;
+}
+
+.breadcumb .content-ol ol{
+    margin: auto;
+}
+
+.breadcumb ol a{
+    text-decoration: none;
+    color: var(--colorred);
+}
+/* ----------- end breadcumb ----------- */
+
+/* ------- start blog */
+#blog .card .card-body h5{
+    transition: all .1s linear;
+    color: var(--maincolortext);
+    font-weight: 600;
+}
+
+#blog .card .card-body h5:hover{
+    color: var(--colorred);
+}
+
+#blog .car .card-body p{
+    line-height: 24px;
+    font-size: 15px;
+}
+
+#blog .card .card-body a{
+    display: inline-block;
+    background: #d9232d;
+    color: #fff;
+    padding: 6px 20px 7px;
+    transition: 0.3s;
+    font-size: 14px;
+    border-radius: 4px;
+}
+/* ------- end blog */
+
+/* ------------ footer -------- */
+footer{
+    background-color: var(--maincolortext);
+    color: var(--colorWhite);
+    padding-top: 50px;
+}
+
+footer h3{
+    font-size: 20px;
+    line-height: 2;
+    font-weight: 700;
+}
+
+footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li{
+    color: rgb(207, 203, 203);
+    transition: all .1s linear;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: .8rem;
+    line-height: 2.2;
+}
+
+footer ul li::before{
+    content: ">";
+    margin-right: 10px;
+    
+}
+
+footer ul li:hover{
+    color: var(--colorWhite);
+}
+
+footer form input[type="text"]{
+    outline: none;
+    border: none;
+    width: 100%;
+    background-color: var(--colorWhite);
+}
+
+footer form input[type="submit"]{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: var(--colorred);
+    color: var(--colorWhite);
+}
+
+footer .copy{
+    margin-top: 50px;
+    background-color: #4f5b68;
+}
+/* ------------ footer -------- */
+
+
+/* back to top */
+.backToTop{
+    position: fixed;
+    right: 5%;
+    top: 90%;
+    transform: rotate(270deg);
+}
+
+.backToTop button{
+    background-color: var(--colorred);
+    outline: none;
+    border: none;
+    padding: 10px;
+    color: var(--colorWhite);
+    display: none;
+}
+/* back to top */

@@ -41,6 +41,10 @@ nav .navbar-nav a{
     padding: 10px;
 }
 
+.activeElement{
+    color: var(--colorred);
+}
+
 nav .navbar-nav a:hover{
     color: var(--colorred);
 }
@@ -50,66 +54,25 @@ nav .navbar-nav button{
 }
 /*----------- statr in navbar -----------*/
 
-
-
-
-/*----------- start in slide----------- */
-.carousel .carousel-inner{
-    z-index: -3;
-    /* height: 91vh; */
-}
-
-.carousel button span{
-    background-color: var(--colorBlack);
+/* ----------- start breadcumb ----------- */
+.breadcumb{
+    background-color: var(--colorGray);
     padding: 10px;
-    z-index: 5;
 }
 
-.backDark{
-    background-image: linear-gradient(to bottom right, var(--colorBlack), var(--colorBlack));
-    z-index: -2;
-}
-/*----------- end in slide -----------*/
-
-
-
-/*----------- start in about -----------*/
-.abo .textOne h1{
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 60px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
+.breadcumb .content-ol{
+    display: flex;
 }
 
-.about .textOne p{
-    font-weight: 500;
-    line-height: 32px;
-    font-size: 24px;
+.breadcumb .content-ol ol{
+    margin: auto;
 }
 
-.about .textTwo ul{
-    list-style: none;
+.breadcumb ol a{
+    text-decoration: none;
+    color: var(--colorred);
 }
-/*----------- end in about -----------*/
-
-
-
-/*----------- start in clients -----------*/
-.clients{
-    background-color: #eee;
-}
-
-.clients img{
-    filter: grayscale(100);
-    transition: all .1s linear;
-}
-
-.clients img:hover{
-    filter: none;
-}
-/* -----------end in clients -----------*/
-
+/* ----------- end breadcumb ----------- */
 
 
 /*----------- start in services----------- */
@@ -166,16 +129,13 @@ nav .navbar-nav button{
 }
 /*----------- end in services -----------*/
 
-/* --------- portfolio ---------- */
-#PORTFOLIO{
-    margin-bottom: 50px;
-}
 
-#PORTFOLIO .section-title{
+/*----------- start in feature----------- */
+#feature .section-title{
     text-transform: uppercase;
 }
 
-#PORTFOLIO .section-title h2{
+#feature .section-title h2{
     font-size: 14px;
     font-weight: 500;
     line-height: 1px;
@@ -185,7 +145,7 @@ nav .navbar-nav button{
     position: relative;
 }
 
-#PORTFOLIO .section-title h2::after{
+#feature .section-title h2::after{
     content: "";
     background-color: var(--colorred);
     width: 10%;
@@ -195,81 +155,43 @@ nav .navbar-nav button{
     bottom: 0;
 }
 
-#PORTFOLIO .section-title p{
+#feature .section-title p{
     font-size: 36px;
     font-weight: 700;
     font-family: "Poppins", sans-serif;
     color: #556270;
 }
 
-#PORTFOLIO ul{
+#feature ul{
     list-style: none;
 }
 
-
-.filter-active{
-    background-color: var(--colorred);
-    color: var(--colorWhite);
-}
-
-#PORTFOLIO .choose ul li{
+#feature ul li{
+    margin-bottom: 25px;
+    transition: all .1s linear;
     cursor: pointer;
-    transition: all .2s linear;
-} 
-
-#PORTFOLIO .choose ul li:hover{
-    background-color: var(--colorred);
-    color: var(--colorWhite);
-} 
-
-#PORTFOLIO .box-portfolio{
-    z-index: -2;
-    max-width: 100%;
-    margin-bottom: 10px;
+    border-right: 2px solid var(--colorred);
 }
 
-#PORTFOLIO .box-portfolio .content-img .portfolio-wrap{
-    position: absolute;
-    top: 50%;
-    left: 10%;  
+#feature ul li:hover{
+    color: var(--colorred);
 }
 
-#PORTFOLIO .box-portfolio .content-img .portfolio-wrap h4{
-    font-size: 20px;
-    color: red;
-    font-weight: 800;
+#feature .tap-content{
+    position: relative;
 }
 
-#PORTFOLIO .box-portfolio .content-img .portfolio-wrap p{
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 14px;
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0;
-    font-style: italic;
-}
-
-#PORTFOLIO .box-portfolio .content-img .shadow{
+#feature .tap-content .tap-pane{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .4;
 }
 
-#PORTFOLIO .box-portfolio img{
-    max-width: 100%;
+.activePane{
+    display: block;
 }
+/*----------- end in feature----------- */
 
-#PORTFOLIO .portfolio-wrap {
-    /* background-color: var(--colorBlack); */
-    opacity: .5;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-}
-/* --------- portfolio ---------- */
 
 /* ------------ footer -------- */
 footer{
