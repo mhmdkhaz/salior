@@ -41,10 +41,6 @@ nav .navbar-nav a{
     padding: 10px;
 }
 
-.activeElement{
-    color: var(--colorred);
-}
-
 nav .navbar-nav a:hover{
     color: var(--colorred);
 }
@@ -74,127 +70,43 @@ nav .navbar-nav button{
 }
 /* ----------- end breadcumb ----------- */
 
-
-/*----------- start in services----------- */
-#services .section-title{
-    text-transform: uppercase;
-}
-
-#services .section-title h2{
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1px;
-    letter-spacing: 2px;
-    color: #aaaaaa;
-    font-family: "Poppins", sans-serif;
-    position: relative;
-}
-
-#services .section-title h2::after{
-    content: "";
-    background-color: var(--colorred);
-    width: 10%;
-    height: 2px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-}
-
-#services .section-title p{
-    font-size: 36px;
-    font-weight: 700;
-    font-family: "Poppins", sans-serif;
-    color: #556270;
-}
-
-#services .card-services{
-    background-color: var(--colorGray);
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
-
-
-#services .card-services i{
-    color: #d9232d;
-    font-size: 40px;
-}
-
-#services .card-services .card-body h5{
+/* -------- start form -------- */
+#contact .info i{
+    font-size: 20px;
     color: var(--maincolortext);
-    transition: all .1s linear;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #edeff1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
 }
 
-#services .card-services:hover .card-body h5{
-    color: var(--colorred);
+#contact .info i:hover{
+    color: #edeff1;
+    background: var(--maincolortext);
 }
 
-#services .card-services .card-body p{
-    line-height: 24px;
-    font-size: 14px;
-}
-/*----------- end in services -----------*/
-
-
-/*----------- start in feature----------- */
-#feature .section-title{
-    text-transform: uppercase;
+#contact .info div h4{
+    color: var(--maincolortext);
 }
 
-#feature .section-title h2{
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1px;
-    letter-spacing: 2px;
-    color: #aaaaaa;
-    font-family: "Poppins", sans-serif;
-    position: relative;
+#contact .info div p{
+    color: var(--maincolortext);
 }
 
-#feature .section-title h2::after{
-    content: "";
-    background-color: var(--colorred);
-    width: 10%;
-    height: 2px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
+#contact .form button{
+    background: #d9232d;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
 }
-
-#feature .section-title p{
-    font-size: 36px;
-    font-weight: 700;
-    font-family: "Poppins", sans-serif;
-    color: #556270;
-}
-
-#feature ul{
-    list-style: none;
-}
-
-#feature ul li{
-    margin-bottom: 25px;
-    transition: all .1s linear;
-    cursor: pointer;
-}
-
-#feature ul li:hover{
-    color: var(--colorred);
-}
-
-#feature .tap-content .tap-pane{
-    width: 100%;
-}
-
-.activeColor{
-    color: var(--colorred);
-}
-
-.activePane{
-    display: block;
-}
-/*----------- end in feature----------- */
-
+/* --------- start form ---------- */
 
 /* ------------ footer -------- */
 footer{
@@ -233,7 +145,6 @@ footer ul li::before{
 footer ul li:hover{
     color: var(--colorWhite);
 }
-
 
 footer .social-links a{
     font-size: 18px;

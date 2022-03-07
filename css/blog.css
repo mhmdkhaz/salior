@@ -70,15 +70,33 @@ nav .navbar-nav button{
 }
 /* ----------- end breadcumb ----------- */
 
-/* ------- start blog */
+/* ------- start blog ---------*/
+#blog .card{
+    cursor: pointer;
+}
+
+#blog .card .img{
+    overflow: hidden;
+}
+
+#blog .card .img img{
+    transition: all .1s linear;
+}
+
+#blog .card:hover img{
+    transform: scale(1.1);
+    height: 100%;
+}
+
+#blog .card:hover .card-body h5{
+    cursor: pointer;
+    color: var(--colorred);
+}
+
 #blog .card .card-body h5{
     transition: all .1s linear;
     color: var(--maincolortext);
     font-weight: 600;
-}
-
-#blog .card .card-body h5:hover{
-    color: var(--colorred);
 }
 
 #blog .car .card-body p{
@@ -95,7 +113,7 @@ nav .navbar-nav button{
     font-size: 14px;
     border-radius: 4px;
 }
-/* ------- end blog */
+/* ------- end blog ---------*/
 
 /* ------------ footer -------- */
 footer{
@@ -133,6 +151,25 @@ footer ul li::before{
 
 footer ul li:hover{
     color: var(--colorWhite);
+}
+
+footer .social-links a{
+    font-size: 18px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 4px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+footer .social-links a:hover{
+    background-color: var(--colorred);
 }
 
 footer form input[type="text"]{

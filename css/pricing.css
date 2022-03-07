@@ -238,6 +238,26 @@ footer ul li:hover{
     color: var(--colorWhite);
 }
 
+
+footer .social-links a{
+    font-size: 18px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 4px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+footer .social-links a:hover{
+    background-color: var(--colorred);
+}
+
 footer form input[type="text"]{
     outline: none;
     border: none;

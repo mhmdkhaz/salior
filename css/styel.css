@@ -151,6 +151,11 @@ nav .navbar-nav button{
     margin: 0;
 }
 
+#services .card-services i{
+    color: #d9232d;
+    font-size: 40px;
+}
+
 #services .card-services .card-body h5{
     color: var(--maincolortext);
     transition: all .1s linear;
@@ -222,6 +227,11 @@ nav .navbar-nav button{
     color: var(--colorWhite);
 } 
 
+#PORTFOLIO .portfolio-img{
+    width: 100%;
+    margin-left: 0;
+}
+
 #PORTFOLIO .box-portfolio{
     z-index: -2;
     max-width: 100%;
@@ -236,7 +246,7 @@ nav .navbar-nav button{
 
 #PORTFOLIO .box-portfolio .content-img .portfolio-wrap h4{
     font-size: 20px;
-    color: red;
+    color: var(--colorred);
     font-weight: 800;
 }
 
@@ -255,7 +265,8 @@ nav .navbar-nav button{
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: .4;
+    opacity: .2;
+    background-color: var(--maincolortext);
 }
 
 #PORTFOLIO .box-portfolio img{
@@ -307,6 +318,25 @@ footer ul li::before{
 
 footer ul li:hover{
     color: var(--colorWhite);
+}
+
+footer .social-links a{
+    font-size: 18px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 4px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+footer .social-links a:hover{
+    background-color: var(--colorred);
 }
 
 footer form input[type="text"]{

@@ -28,6 +28,13 @@ function check() {
     document.querySelectorAll(this.dataset.pane).forEach((el) => {
         el.style.display = "block";
     });
+    ElementClick.forEach((el)=>{
+        el.classList.remove("activeColor");
+        this.classList.add("activeColor");
+
+        el.style.borderRight = "none";
+        this.style.borderRight = "2px solid #d9232d";
+    })
 }
 
 /*end CHECK OUR FEATURES*/
