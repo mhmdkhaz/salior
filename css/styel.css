@@ -149,6 +149,11 @@ nav .navbar-nav button{
     width: 100%;
     height: 100%;
     margin: 0;
+    transition: all .1s linear;
+}
+
+#services .card-services:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 #services .card-services i{
@@ -233,7 +238,6 @@ nav .navbar-nav button{
 }
 
 #PORTFOLIO .box-portfolio{
-    z-index: -2;
     max-width: 100%;
     margin-bottom: 10px;
 }
@@ -242,6 +246,12 @@ nav .navbar-nav button{
     position: absolute;
     top: 50%;
     left: 10%;  
+    transform: scale(0);
+    transition: all .2s linear;
+}
+
+#PORTFOLIO .box-portfolio .content-img:hover .portfolio-wrap{
+    transform: scale(1);
 }
 
 #PORTFOLIO .box-portfolio .content-img .portfolio-wrap h4{
@@ -265,7 +275,11 @@ nav .navbar-nav button{
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: .2;
+    opacity: .4;
+    transition: all .1s linear;
+}
+
+#PORTFOLIO .box-portfolio .content-img:hover .shadow{
     background-color: var(--maincolortext);
 }
 
@@ -274,8 +288,6 @@ nav .navbar-nav button{
 }
 
 #PORTFOLIO .portfolio-wrap {
-    /* background-color: var(--colorBlack); */
-    opacity: .5;
     z-index: 1;
     width: 100%;
     height: 100%;

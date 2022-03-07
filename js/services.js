@@ -17,26 +17,28 @@ nav();
 let ElementClick = document.querySelectorAll("#feature ul li");
 let ContentPane = document.querySelectorAll(".tap-pane");
 
-ElementClick.forEach((element)=>{
-    element.addEventListener("click" , check);
-})
-
-function check() {
-    ContentPane.forEach((pane)=>{
-        pane.style.display = "none";
+function SectionCheck() {
+    ElementClick.forEach((element)=>{
+        element.addEventListener("click" , check);
     })
-    document.querySelectorAll(this.dataset.pane).forEach((el) => {
-        el.style.display = "block";
-    });
-    ElementClick.forEach((el)=>{
-        el.classList.remove("activeColor");
-        this.classList.add("activeColor");
-
-        el.style.borderRight = "none";
-        this.style.borderRight = "2px solid #d9232d";
-    })
+    
+    function check() {
+        ContentPane.forEach((pane)=>{
+            pane.style.display = "none";
+        })
+        document.querySelectorAll(this.dataset.pane).forEach((el) => {
+            el.style.display = "block";
+        });
+        ElementClick.forEach((el)=>{
+            el.classList.remove("activeColor");
+            this.classList.add("activeColor");
+    
+            el.style.borderRight = "none";
+            this.style.borderRight = "2px solid #d9232d";
+        })
+    }
 }
-
+SectionCheck();
 /*end CHECK OUR FEATURES*/
 
 // back to top
