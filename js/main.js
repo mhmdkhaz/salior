@@ -1,18 +1,3 @@
-// start nav
-let NavElement = document.querySelectorAll(".navbar .navbar-nav a");
-function nav() {
-    NavElement.forEach((element)=>{
-        element.onclick = function () {
-            NavElement.forEach((el)=>{
-                el.style.color = "#556270";
-                this.style.color = "red";
-            })
-        }
-    })
-}
-nav();
-// end nav
-
 // filter element img
 let ImgFilter = document.querySelectorAll(".portfolio-img .box-portfolio");
 let BtnChoose = document.querySelectorAll(".choose ul li");

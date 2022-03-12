@@ -48,6 +48,7 @@ nav .navbar-nav a:hover{
 nav .navbar-nav button{
     background-color: var(--colorred);
 }
+    
 /*----------- statr in navbar -----------*/
 
 
@@ -382,6 +383,7 @@ footer .copy{
     right: 5%;
     top: 90%;
     transform: rotate(270deg);
+    background-color: red;
 }
 
 .backToTop button{
